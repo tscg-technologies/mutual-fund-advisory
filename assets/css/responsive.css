@@ -1,0 +1,252 @@
+/* ==========================================================================
+   MUTUAL FUND ADVISORY - Responsive Stylesheet
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-badges-row, .hero .btn-group {
+    justify-content: center;
+  }
+
+  .card-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .process-steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .footer-brand-col {
+    grid-column: span 2;
+  }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .topbar-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.35rem;
+  }
+
+  .topbar-contact {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .main-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5rem 1.5rem 2rem 1.5rem;
+    overflow-y: auto;
+    transition: right var(--transition-smooth);
+    z-index: 1050;
+  }
+
+  .main-nav.is-open {
+    right: 0;
+  }
+
+  .nav-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+  }
+
+  .nav-backdrop.is-open {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.75rem 0.5rem;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--border-subtle);
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    border: none;
+    background-color: var(--bg-light);
+    border-radius: var(--radius-sm);
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    display: none;
+  }
+
+  .dropdown-menu-wide {
+    min-width: 100%;
+    padding: 0.5rem;
+  }
+
+  .nav-item:nth-child(3) .dropdown-menu-wide {
+    left: auto;
+  }
+
+  .dropdown-menu-company {
+    min-width: 100%;
+    right: auto;
+    left: auto;
+  }
+
+  .dropdown-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .nav-item.is-dropdown-open > .dropdown-menu {
+    display: block;
+  }
+
+  .header-actions .btn-primary {
+    display: none;
+  }
+
+  h1 { font-size: 2.25rem; }
+  .hero-content h1 { font-size: 2.35rem; }
+  h2 { font-size: 1.75rem; }
+  .section { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+
+  .card-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .process-steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand-col {
+    grid-column: span 1;
+  }
+
+  .footer-bottom-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.85rem;
+  }
+
+  .footer-legal-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+
+  .statutory-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .card-grid-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 1.95rem;
+  }
+
+  .calculator-wrapper,
+  .form-card,
+  .questionnaire-card {
+    padding: 1.5rem 1rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+
+  .img-placeholder {
+    padding: 1rem;
+  }
+
+  .img-placeholder-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .img-placeholder-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+}
